@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Спортивні події університету</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="top-line">
+            <div class="logo">
+                <span class="logo-box">НУ</span>
+                <div>
+                    <h1>Спорт університету</h1>
+                    <p>Найактуальніші спортивні події</p>
+                </div>
+            </div>
+            <button class="menu-btn" id="menuBtn">Меню</button>
+        </div>
+
+        <nav class="menu" id="menu">
+            <a href="index.html" class="active">Головна</a>
+            <a href="about.html">Про сайт</a>
+            <a href="news.html">Новини</a>
+            <a href="gallery.html">Галерея</a>
+            <a href="contacts.html">Контакти</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="slider">
+            <div class="slide show">
+                <img src="img/banner.png" alt="Банер спортивних подій">
+                <div class="slide-text">
+                    <h2>Найактуальніші спортивні події університету</h2>
+                    <p>Новини секцій, результати змагань та досягнення студентів.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/sports/football.png" alt="Футбол">
+                <div class="slide-text">
+                    <h2>Студентські турніри</h2>
+                    <p>Слідкуй за календарем матчів та університетських першостей.</p>
+                </div>
+            </div>
+            <div class="slide">
+                <img src="img/gallery/awards1.png" alt="Нагороди">
+                <div class="slide-text">
+                    <h2>Перемоги наших спортсменів</h2>
+                    <p>Публікуємо фото, результати та короткі звіти після подій.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="block">
+            <div class="section-title">
+                <h2>Останні новини</h2>
+                <a href="news.html">Усі новини</a>
+            </div>
+            <div class="news" id="lastNews"></div>
+        </section>
+
+        <section class="block">
+            <div class="section-title">
+                <h2>Фото з подій</h2>
+                <a href="gallery.html">Відкрити галерею</a>
+            </div>
+            <div class="photo-line" id="photoLine"></div>
+        </section>
+
+        <section class="block blue-block">
+            <div class="section-title light">
+                <h2>Спортивні секції</h2>
+            </div>
+            <div class="sport" id="sportBox"></div>
+        </section>
+
+        <section class="block">
+            <div class="section-title">
+                <h2>Найближчі події</h2>
+            </div>
+            <div class="event-list" id="eventList"></div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>© 2026 Інформаційний портал спортивних подій університету</p>
+        <p>Навчальний проєкт з дисципліни «Веб-програмування та веб-дизайн»</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
+
+<!--
+Пояснення: файл index.html створює головну сторінку сайту.
+Тут є шапка, меню, слайдер, останні новини, фото, спортивні секції, події та футер.
+-->

@@ -1,0 +1,498 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #222;
+    background: #ffffff;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.header {
+    background: #064b9b;
+    color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+}
+
+.top-line {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 18px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+}
+
+.logo-box {
+    background: #f4c20d;
+    color: #064b9b;
+    font-weight: bold;
+    font-size: 24px;
+    width: 58px;
+    height: 58px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 25px;
+}
+
+.logo p {
+    margin: 4px 0 0;
+    font-size: 14px;
+    color: #e6eef8;
+}
+
+.menu {
+    max-width: 1180px;
+    margin: 0 auto;
+    display: flex;
+    padding: 0 15px 15px;
+    gap: 10px;
+}
+
+.menu a {
+    color: white;
+    padding: 10px 14px;
+    font-weight: bold;
+}
+
+.menu a:hover,
+.menu a.active {
+    background: #f4c20d;
+    color: #053b7a;
+}
+
+.menu-btn {
+    display: none;
+    border: 1px solid white;
+    color: white;
+    background: transparent;
+    padding: 9px 13px;
+    cursor: pointer;
+}
+
+.slider {
+    position: relative;
+    height: 430px;
+    overflow: hidden;
+    background: #0b4ea2;
+}
+
+.slide {
+    display: none;
+    height: 430px;
+    position: relative;
+}
+
+.slide.show {
+    display: block;
+}
+
+.slide img {
+    width: 100%;
+    height: 430px;
+    object-fit: cover;
+}
+
+.slide:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,35,85,0.38);
+}
+
+.slide-text {
+    position: absolute;
+    z-index: 2;
+    left: 8%;
+    bottom: 55px;
+    color: white;
+    max-width: 680px;
+}
+
+.slide-text h2 {
+    font-size: 42px;
+    margin: 0 0 12px;
+}
+
+.slide-text p {
+    font-size: 20px;
+    margin: 0;
+}
+
+.block {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 46px 15px;
+}
+
+.section-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.section-title h2,
+.block h2 {
+    color: #064b9b;
+    margin: 0 0 18px;
+}
+
+.section-title a {
+    color: #064b9b;
+    font-weight: bold;
+}
+
+.news {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 22px;
+}
+
+.news-card {
+    border: 1px solid #d9e3f1;
+    background: white;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.08);
+}
+
+.news-card img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.news-card .text {
+    padding: 16px;
+}
+
+.news-card .date {
+    color: #777;
+    font-size: 14px;
+    margin-bottom: 7px;
+}
+
+.news-card h3 {
+    color: #064b9b;
+    margin: 0 0 10px;
+    font-size: 20px;
+}
+
+.news-card p {
+    line-height: 1.5;
+    margin: 0;
+}
+
+.blue-block {
+    max-width: none;
+    background: #064b9b;
+    color: white;
+}
+
+.blue-block .section-title {
+    max-width: 1180px;
+    margin: 0 auto 20px;
+    padding: 0 15px;
+}
+
+.section-title.light h2 {
+    color: white;
+}
+
+.sport {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.sport-card {
+    background: white;
+    color: #222;
+    border-bottom: 5px solid #f4c20d;
+}
+
+.sport-card img {
+    height: 130px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.sport-card h3 {
+    color: #064b9b;
+    margin: 12px;
+}
+
+.sport-card p {
+    margin: 0 12px 15px;
+    font-size: 14px;
+}
+
+.photo-line {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 18px;
+}
+
+.photo-card {
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #d9e3f1;
+    background: #ffffff;
+}
+
+.photo-card img {
+    height: 190px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.photo-card p {
+    margin: 0;
+    padding: 12px;
+    color: #064b9b;
+    font-weight: bold;
+}
+
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 18px;
+}
+
+.event-card {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+    border-left: 6px solid #f4c20d;
+    background: #f8fbff;
+    padding: 18px;
+}
+
+.event-date {
+    background: #064b9b;
+    color: white;
+    padding: 13px;
+    min-width: 105px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.event-card h3 {
+    margin: 0 0 6px;
+    color: #064b9b;
+}
+
+.event-card p {
+    margin: 0;
+}
+
+.page-banner {
+    background: #0b4ea2;
+    color: white;
+    padding: 70px 15px;
+    text-align: center;
+}
+
+.page-banner h2 {
+    font-size: 38px;
+    margin: 0 0 10px;
+}
+
+.page-banner p {
+    margin: 0;
+    font-size: 18px;
+}
+
+.text-block p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.box {
+    border: 1px solid #d9e3f1;
+    padding: 22px;
+    background: #f8fbff;
+}
+
+.box h3 {
+    color: #064b9b;
+    margin-top: 0;
+}
+
+.galery {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 22px;
+}
+
+.galery-item {
+    border: 1px solid #d9e3f1;
+    background: white;
+}
+
+.galery-item img {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+}
+
+.galery-item p {
+    padding: 14px;
+    margin: 0;
+    font-weight: bold;
+    color: #064b9b;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: 25px;
+}
+
+.contact-box {
+    background: #f8fbff;
+    border-left: 6px solid #064b9b;
+    padding: 24px;
+}
+
+.map iframe {
+    width: 100%;
+    height: 360px;
+    border: 0;
+}
+
+.footer {
+    background: #053b7a;
+    color: white;
+    text-align: center;
+    padding: 24px 15px;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+@media (max-width: 900px) {
+    .news {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .sport {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .photo-line,
+    .event-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .info-grid,
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 650px) {
+    .top-line {
+        align-items: flex-start;
+    }
+
+    .logo h1 {
+        font-size: 19px;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    .menu {
+        display: none;
+        flex-direction: column;
+        padding-bottom: 15px;
+    }
+
+    .menu.open {
+        display: flex;
+    }
+
+    .slider,
+    .slide,
+    .slide img {
+        height: 350px;
+    }
+
+    .slide-text {
+        left: 20px;
+        right: 20px;
+        bottom: 35px;
+    }
+
+    .slide-text h2 {
+        font-size: 28px;
+    }
+
+    .slide-text p {
+        font-size: 16px;
+    }
+
+    .news,
+    .sport,
+    .galery,
+    .photo-line,
+    .event-list {
+        grid-template-columns: 1fr;
+    }
+
+    .event-card {
+        display: block;
+    }
+
+    .event-date {
+        margin-bottom: 12px;
+    }
+
+    .page-banner h2 {
+        font-size: 30px;
+    }
+
+    .section-title {
+        display: block;
+    }
+}
+
+/*
+Пояснення: файл style.css відповідає за зовнішній вигляд публічних сторінок.
+Тут використані Flexbox, Grid і Media Queries для адаптивності на телефоні.
+*/
