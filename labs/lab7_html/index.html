@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section id="startPage" class="center">
+        <h1>Моя перша гра</h1>
+        <button id="startBtn">Почати гру</button>
+    </section>
+
+    <section id="gamePage" class="game hidden">
+        <h1>Назва гри</h1>
+        <div class="top">
+            <p>Залишилось: <span id="time">60</span> с.</p>
+            <button id="restartBtn">Почати з початку</button>
+        </div>
+
+        <div id="field" class="field"></div>
+
+        <h2>Статистика</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Назва гри</th>
+                    <th>Час</th>
+                </tr>
+            </thead>
+            <tbody id="tableBody"></tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

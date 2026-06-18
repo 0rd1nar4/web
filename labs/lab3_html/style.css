@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+}
+
+header {
+    background: #064b9b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+main {
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 15px;
+}
+
+.panel {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 14px;
+    border: 0;
+    background: #064b9b;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #053b7a;
+}
+
+.block {
+    background: white;
+    border: 1px solid #cbd6e2;
+    padding: 20px;
+}
+
+pre {
+    white-space: pre-wrap;
+    font-size: 16px;
+}

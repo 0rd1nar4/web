@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Лабораторна робота 1</h1>
+        <p>Події JavaScript та робота з елементами сторінки</p>
+    </header>
+
+    <main>
+        <section class="block">
+            <h2>1. Клік по картинках</h2>
+            <p>Натисни на картинку. Її ширина буде виведена в консоль.</p>
+            <div class="pictures">
+                <img class="pic" width="300" height="300" alt="Малюнок 1" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='300' height='300' fill='%23064b9b'/%3E%3Ccircle cx='150' cy='150' r='70' fill='%23f4c20d'/%3E%3C/svg%3E">
+                <img class="pic" width="300" height="300" alt="Малюнок 2" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='300' height='300' fill='%232a9d8f'/%3E%3Crect x='70' y='70' width='160' height='160' fill='%23ffffff'/%3E%3C/svg%3E">
+                <img class="pic" width="300" height="300" alt="Малюнок 3" src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='300'%3E%3Crect width='300' height='300' fill='%23e76f51'/%3E%3Cpolygon points='150,45 255,240 45,240' fill='%23ffffff'/%3E%3C/svg%3E">
+            </div>
+        </section>
+
+        <section class="block">
+            <h2>2. Посилання і title</h2>
+            <p>Наведи мишку на посилання. У title запишеться його href.</p>
+            <a class="link" href="https://nupp.edu.ua">Сайт університету</a>
+            <a class="link" href="https://developer.mozilla.org">MDN Web Docs</a>
+            <a class="link" href="https://www.google.com">Google</a>
+        </section>
+
+        <section class="block">
+            <h2>3. Input і виведення value</h2>
+            <input class="inputText" value="Футбол">
+            <input class="inputText" value="Волейбол">
+            <input class="inputText" value="Баскетбол">
+            <p id="demo">Тут буде значення input.</p>
+        </section>
+
+        <section class="block">
+            <h2>4. Квадрат числа</h2>
+            <p class="number" data-num="2">два</p>
+            <p class="number" data-num="5">п'ять</p>
+            <p class="number" data-num="9">дев'ять</p>
+        </section>
+
+        <section class="block">
+            <h2>5. Чергування кольору div</h2>
+            <div class="colorBox">Блок 1</div>
+            <div class="colorBox">Блок 2</div>
+            <div class="colorBox">Блок 3</div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
